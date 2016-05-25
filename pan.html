@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular js</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+</head>
+<body>
+<div style="width:60%"  ng-app="calculator" ng-controller="getCal" class="container">
+    <div class="">
+        <div class="row">
+        <input ng-model="calVal.result"  type="text" placeholder="Enter Preferred Value"
+           readonly  value="{{calVal.result}}"  class="sr-only btn-group btn-group-lg btn-group-justified form-control input-lg text-right disabled">
+            </div>
+        <div class="row">
+            <div class="btn-group btn-group-lg btn-group-justified ">
+                <a href="#"ng-model="cancel" type="button" class="btn btn-primary" ng-click="clickCancel()">C</a>
+                <a href="#" ng-model="on" type="button" class="btn btn-success" ng-click="clickOn()">ON</a>
+                <a href="#" ng-model="off" type="button" class="btn btn-danger" ng-click="clickOff()">OFF</a>
+            </div>
+        <div class="btn-group btn-group-lg btn-group-justified ">
+            <a href="#" ng-model="one" type="button" class="btn btn-default " ng-click="clickOne()">1</a>
+            <a href="#" ng-model="two"  type="button" class="btn btn-default" ng-click="clickTwo()">2</a>
+            <a href="#" ng-model="three" type="button" class="btn btn-default" ng-click="clickThree()">3</a>
+            </div>
+            <div class="btn-group btn-group-lg btn-group-justified ">
+            <a href="#" ng-model="four" type="button" class="btn btn-default" ng-click="clickFour()">4</a>
+            <a href="#" ng-model="five" type="button" class="btn btn-default" ng-click="clickFive()">5</a>
+            <a href="#" ng-model="six" type="button" class="btn btn-default" ng-click="clickSix()">6</a>
+                </div>
+                <div class="btn-group btn-group-lg btn-group-justified ">
+            <a href="#" ng-model="seven" type="button" class="btn btn-default"  ng-click="clickSeven()">7</a>
+            <a href="#" ng-model="eight" type="button" class="btn btn-default" ng-click="clickEight()">8</a>
+            <a href="#" ng-model="nine" type="button" class="btn btn-default" ng-click="clickNine()">9</a>
+             </div>
+                    <div class="btn-group btn-group-lg btn-group-justified ">
+            <a href="#" ng-model="zero" type="button" class="btn btn-default"  ng-click="clickZero()">0</a>
+            <a href="#" ng-model="add" type="button" class="btn btn-default" ng-click="clickAdd()">+</a>
+            <a href="#" ng-model="subtract" type="button" class="btn btn-default" ng-click="clickSub()">-</a>
+                    </div>
+                        <div class="btn-group btn-group-lg btn-group-justified">
+            <a href="#" ng-model="multiply" type="button" class="btn btn-default" ng-click="clickMul()">*</a>
+            <a href="#" ng-model="divide" type="button" class="btn btn-default" ng-click="clickDiv()">/</a>
+            <a href="#" ng-model="ans"   type="button" class="btn btn-default" ng-click="clickAns()">=</a>
+</div>
+
+            </div>
+        </div>
+</div>
+
+
+
+
+<!-- jQuery library -->
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<!--<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>-->
+<script src="js/angular.js"></script>
+<!--<script src="angular/src/Angular.js"></script>-->
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.17/angular.min.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>
